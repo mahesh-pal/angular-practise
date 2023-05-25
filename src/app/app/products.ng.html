@@ -1,0 +1,13 @@
+<h1>Products</h1>
+<div class="table">
+  <div class="row header">
+    <div class="column">ID</div>
+    <div class="column">Name</div>
+  </div>
+  <div class="row" *ngFor="let product of products">
+    <div class="column"><a [routerLink]="[product.id]">{{product.id}}</a></div>
+    <div class="column">{{product.name}}</div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
